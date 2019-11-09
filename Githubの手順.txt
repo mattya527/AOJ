@@ -1,0 +1,31 @@
+・リモートで作業を行うとき（ローカルをgithub上にアップする）
+github上に送るディレクトリに移動
+$cd ディレクトリ名
+
+初めに空のリポジトリを作成する。
+$git init
+
+ファイルとディレクトリのコミットをする
+$git add .
+$git commit -m "first commit"
+
+リモートリポジトリの登録
+$git remote add origin githubのリポジトリURL
+
+ローカルファイルのアップロード
+$git push -u origin master
+
+・github上のリポジトリをローカルに持ってくる
+空のリポジトリを作成する
+$git init
+
+鍵の作成
+$cd ~/.ssh //.sshに移動
+$ssh-keygen -t rsa //rsa鍵を作成する。Enterをずっと押す
+$ssh -T git@github //これでアクセスできたらOK
+
+ローカルにリポジトリをコピーする
+$git clone リポジトリのURL
+$git remote -v //確認
+
+これで一通りはOKなはず
