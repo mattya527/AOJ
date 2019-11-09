@@ -1,31 +1,33 @@
-EƒŠƒ‚[ƒg‚Åì‹Æ‚ðs‚¤‚Æ‚«iƒ[ƒJƒ‹‚ðgithubã‚ÉƒAƒbƒv‚·‚éj
-githubã‚É‘—‚éƒfƒBƒŒƒNƒgƒŠ‚ÉˆÚ“®
-$cd ƒfƒBƒŒƒNƒgƒŠ–¼
+ãƒ»ãƒªãƒ¢ãƒ¼ãƒˆã§ä½œæ¥­ã‚’è¡Œã†ã¨ãï¼ˆãƒ­ãƒ¼ã‚«ãƒ«ã‚’githubä¸Šã«ã‚¢ãƒƒãƒ—ã™ã‚‹ï¼‰
+githubä¸Šã«é€ã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«ç§»å‹•
+$cd ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå
 
-‰‚ß‚É‹ó‚ÌƒŠƒ|ƒWƒgƒŠ‚ðì¬‚·‚éB
+åˆã‚ã«ç©ºã®ãƒªãƒã‚¸ãƒˆãƒªã‚’ä½œæˆã™ã‚‹ã€‚
 $git init
 
-ƒtƒ@ƒCƒ‹‚ÆƒfƒBƒŒƒNƒgƒŠ‚ÌƒRƒ~ƒbƒg‚ð‚·‚é
+ãƒ•ã‚¡ã‚¤ãƒ«ã¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ã‚³ãƒŸãƒƒãƒˆã‚’ã™ã‚‹
 $git add .
 $git commit -m "first commit"
 
-ƒŠƒ‚[ƒgƒŠƒ|ƒWƒgƒŠ‚Ì“o˜^
-$git remote add origin github‚ÌƒŠƒ|ƒWƒgƒŠURL
+ãƒªãƒ¢ãƒ¼ãƒˆãƒªãƒã‚¸ãƒˆãƒªã®ç™»éŒ²
+$git remote add origin githubã®ãƒªãƒã‚¸ãƒˆãƒªURL
 
-ƒ[ƒJƒ‹ƒtƒ@ƒCƒ‹‚ÌƒAƒbƒvƒ[ƒh
+ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰
 $git push -u origin master
 
-Egithubã‚ÌƒŠƒ|ƒWƒgƒŠ‚ðƒ[ƒJƒ‹‚ÉŽ‚Á‚Ä‚­‚é
-‹ó‚ÌƒŠƒ|ƒWƒgƒŠ‚ðì¬‚·‚é
+ãƒ»githubä¸Šã®ãƒªãƒã‚¸ãƒˆãƒªã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã«æŒã£ã¦ãã‚‹
+ç©ºã®ãƒªãƒã‚¸ãƒˆãƒªã‚’ä½œæˆã™ã‚‹
 $git init
 
-Œ®‚Ìì¬
-$cd ~/.ssh //.ssh‚ÉˆÚ“®
-$ssh-keygen -t rsa //rsaŒ®‚ðì¬‚·‚éBEnter‚ð‚¸‚Á‚Æ‰Ÿ‚·
-$ssh -T git@github //‚±‚ê‚ÅƒAƒNƒZƒX‚Å‚«‚½‚çOK
+éµã®ä½œæˆ
+$cd ~/.ssh //.sshã«ç§»å‹•
+$ssh-keygen -t rsa //rsaéµã‚’ä½œæˆã™ã‚‹ã€‚Enterã‚’ãšã£ã¨æŠ¼ã™
+$ssh -T git@github //ã“ã‚Œã§ã‚¢ã‚¯ã‚»ã‚¹ã§ããŸã‚‰OK
 
-ƒ[ƒJƒ‹‚ÉƒŠƒ|ƒWƒgƒŠ‚ðƒRƒs[‚·‚é
-$git clone ƒŠƒ|ƒWƒgƒŠ‚ÌURL
-$git remote -v //Šm”F
+ãƒ­ãƒ¼ã‚«ãƒ«ã«ãƒªãƒã‚¸ãƒˆãƒªã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹
+$git clone ãƒªãƒã‚¸ãƒˆãƒªã®URL
+$git remote -v //ç¢ºèª
 
-‚±‚ê‚Åˆê’Ê‚è‚ÍOK‚È‚Í‚¸
+ã“ã‚Œã§ä¸€é€šã‚Šã¯OKãªã¯ãš
+
+ãƒ»ä½œæ¥­ã®æ‰‹é †
