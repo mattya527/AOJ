@@ -1,17 +1,40 @@
-#命令の関数の作成
-def print_ab(pstr,a,b): #print命令
-    str_list = list(pstr)
-    str_list =  str_list[a:b+1]
-    pstr = ''.join(str_list)
-    return pstr
+#print命令
+def instPrint(word,a,b): #wordのa文字からb文字までを出力
+    print('{}'.format(word[a:b+1]))
 
-def reverse_ab(pstr,a,b): #reverse命令
-    str_list = list(pstr)
-    str_list2 = str_list[a:b+1]
-    str_list2 = list(reversed(str_list2))
+# instPrint('world',1,3) #ok
+def instReverse(word,a,b): #wordのa文字からb文字までを逆順にする
+    reword = word[a:b+1]
+    reword = reword[::-1]
+    listword = list(word)
+    listreword = list(reword)
+    j = 0
+    for i in listreword:
+        listword[a+j] = i
+        j+=1
+    return(''.join(listword))
 
-i_str = input() #文字列strの入力
-q_n = int(input()) #命令数
+# print(instReverse('world',1,5)) #ok
 
-for i in range(q_n):
-    q = input().split() #命令の入力
+def instReplace(word,a,b,p): #wordのa文字からb文字までをpに変える
+    listword = list(word)
+    listp = list(p)
+    j = 0
+    for i in listp:
+        listword[a+j] = i
+        j+=1
+    return("".join(listword))
+
+# print(instReplace('world',1,3,'aaa')) #ok
+
+#main
+word = input()
+q = int(input())
+for i in range(q):
+    inst = input().split()
+    if inst[0] == "print":
+        instPrint(word,int(inst[1]),int(inst[2]))
+    elif inst[0] == "reverse":
+        word = instReverse(word,int(inst[1]),int(inst[2]))
+    elif inst[0] == "replace":
+        word = instReplace(word,int(inst[1]),int(inst[2]),inst[3])
