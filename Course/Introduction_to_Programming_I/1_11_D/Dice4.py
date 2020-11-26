@@ -12,3 +12,4 @@ dice = {}
 for i in range(n):
     dice[i] = Dice()
 
+
